@@ -33,6 +33,9 @@ import jobs from './assets/jobs.json'
         </v-row>
       </v-col>
       <v-col>
+        <v-row class="ml-15 mb-0">
+                <v-btn variant="text" append-icon="fas fa-download" href="/Resume_Brian_Tambara.pdf">View Full Resume</v-btn>
+        </v-row>
         <v-timeline density="compact">
           <v-timeline-item v-for="job in jobs">
               <Job
