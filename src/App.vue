@@ -5,11 +5,15 @@ import { ref } from 'vue';
 
 const isAboutShowing = ref(true)
 const isResumeShowing = ref(false)
+const variantAbout = ref("text")
+const variantResume = ref("plain")
 
 function handleAbout(){
   if(!isAboutShowing.value){
     isAboutShowing.value = true
     isResumeShowing.value = false
+    variantResume.value = "plain"
+    variantAbout.value = "text"
   }
 }
 
@@ -17,6 +21,8 @@ function handleResume(){
   if(!isResumeShowing.value){
     isAboutShowing.value = false
     isResumeShowing.value = true
+    variantResume.value = "text"
+    variantAbout.value = "plain"
   }
 }
 
@@ -32,13 +38,13 @@ function handleResume(){
           <p class="text-left">I am a Los Angeles based Software Engineer currently looking for work. My preferred languages for building web applications are Python and Typescript.</p>
           <v-col class="mt-4">
             <v-row>
-              <v-btn variant="plain" @click="handleAbout()">
+              <v-btn :variant="variantAbout" @click="handleAbout()">
               About
               </v-btn>
             </v-row>
 
             <v-row>
-              <v-btn variant="plain" @click="handleResume()">
+              <v-btn :variant="variantResume" @click="handleResume()">
               Resume
               </v-btn>
             </v-row>
