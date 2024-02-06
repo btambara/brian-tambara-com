@@ -14,6 +14,7 @@ function handleAbout(){
     isResumeShowing.value = false
     variantResume.value = "plain"
     variantAbout.value = "text"
+    scroll(0,0)
   }
 }
 
@@ -23,6 +24,7 @@ function handleResume(){
     isResumeShowing.value = true
     variantResume.value = "text"
     variantAbout.value = "plain"
+    scroll(0,0)
   }
 }
 
@@ -31,29 +33,36 @@ function handleResume(){
 <template>
     <v-container>
       <v-row class="h-screen">
-        <v-col class="mt-16" cols="5">
-          <h1 class="mb-1 text-left">Brian Tambara</h1>
-          <h2 class="mb-1 text-left">Software Engineer</h2>
+        <div class="ma-2 pa-2 fixed">
+          <v-col cols="5">
+            <div>
+              <v-col class="mt-11 intro-pane rounded-lg pa-6">
+                <h1 class="text-left text-gold">Brian Tambara</h1>
+                <h2 class="text-left">Software Engineer</h2>
 
-          <p class="text-left">I am a Los Angeles based Software Engineer currently looking for work. My preferred languages for building web applications are Python and Typescript.</p>
-          <v-col class="mt-4">
-            <v-row>
-              <v-btn :variant="variantAbout" @click="handleAbout()">
-              About
-              </v-btn>
-            </v-row>
+                <p class="text-left">I am a Los Angeles based Software Engineer currently looking for work. My preferred languages for building web applications are Python and Typescript.</p>
+                <v-col class="mt-4">
+                  <v-row>
+                    <v-btn :variant="variantAbout" @click="handleAbout()">
+                      About
+                    </v-btn>
+                  </v-row>
 
-            <v-row>
-              <v-btn :variant="variantResume" @click="handleResume()">
-              Resume
-              </v-btn>
+                  <v-row>
+                    <v-btn :variant="variantResume" @click="handleResume()">
+                    Resume
+                    </v-btn>
+                  </v-row>
+                </v-col>
+              </v-col>
+            </div>
+
+            <v-row class="mt-2 justify-center">
+              <v-btn href="http://github.com/btambara" icon="fab fa-github" variant="text"></v-btn>
+              <v-btn href="mailto:btambara@gmail.com" icon="fas fa-envelope" variant="text"></v-btn>
             </v-row>
           </v-col>
-
-          <v-btn href="http://github.com/btambara" icon="fab fa-github" variant="text"></v-btn>
-          <v-btn href="mailto:btambara@gmail.com" icon="fas fa-envelope" variant="text"></v-btn>
-        </v-col>
-
+        </div>
         <v-col>
           <About v-show="isAboutShowing"/>
           <Resume v-show="isResumeShowing" />
@@ -66,6 +75,10 @@ function handleResume(){
 .fixed {
   position: fixed;
 }
+.intro-pane {
+  background-color: #65474C;
+}
+
 .logo {
   height: 6em;
   padding: 1.5em;
@@ -77,5 +90,8 @@ function handleResume(){
 }
 .logo.vue:hover {
   filter: drop-shadow(0 0 2em #42b883aa);
+}
+.text-gold {
+  color: #D69B43
 }
 </style>

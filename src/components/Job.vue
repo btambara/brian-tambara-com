@@ -13,13 +13,13 @@ interface Job {
 const details = defineProps<Job>()
 
 function openWebsite() {
-    window.location.href = details.website
+    window.location.href = details.website; 
 }
 </script>
 
 <template>
     <v-hover v-slot="{ isHovering, props }">
-        <v-card width="570" variant="elevated" :class="{ 'on-hover': isHovering }" v-bind="props" link @click="openWebsite()">
+        <v-card variant="elevated" :class="{ 'on-hover': isHovering }" v-bind="props" link @click="openWebsite()" color="#65474C">
             <v-container fluid>
                 <v-row no-gutters>
                     <v-col class="pt-3 text-right" cols="auto">
