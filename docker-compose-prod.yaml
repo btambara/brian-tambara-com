@@ -1,13 +1,11 @@
 services:
   watchtower:
     image: containrrr/watchtower
-    restart: always
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
     command: --interval 30 bt-web
   web:
     image: ghcr.io/btambara/brian-tambara-com:main
     container_name: bt-web
-    restart: always
     ports:
       - "80:80"
