@@ -4,9 +4,9 @@ import jobs from "../assets/jobs.json";
 </script>
 
 <template>
-  <v-container fluid>
+  <v-container>
     <v-row class="justify-end">
-      <v-col cols="7">
+      <v-col cols="auto">
         <v-row class="ml-15 mb-0">
           <v-btn
             variant="text"

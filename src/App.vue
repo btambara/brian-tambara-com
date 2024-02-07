@@ -31,36 +31,33 @@ function handleResume() {
 
 <template>
   <v-container>
-    <v-row class="h-screen">
-      <div class="ma-2 pa-2 fixed">
-        <v-col cols="5">
-          <div>
-            <v-col class="mt-11 intro-pane rounded-lg pa-6">
-              <h1 class="text-left text-gold">Brian Tambara</h1>
-              <h2 class="text-left">Software Engineer</h2>
-
-              <p class="text-left">
-                I am a Los Angeles based Software Engineer currently looking for
-                work. My preferred languages for building web applications are
-                Python and Typescript.
-              </p>
-              <v-col class="mt-4">
-                <v-row>
-                  <v-btn :variant="variantAbout" @click="handleAbout()">
-                    About
-                  </v-btn>
-                </v-row>
-
-                <v-row>
-                  <v-btn :variant="variantResume" @click="handleResume()">
-                    Resume
-                  </v-btn>
-                </v-row>
-              </v-col>
-            </v-col>
-          </div>
-
-          <v-row class="mt-2 justify-center">
+    <v-row>
+      <v-col
+        class="ma-sm-1 mt-md-16 mt-lg-16 mt-xl-10"
+        cols="12"
+        md="6"
+        lg="5"
+        xl="5"
+      >
+        <v-sheet color="#4A4064">
+          <v-sheet class="rounded-xl" color="#65474c" elevation="12">
+            <div class="ml-8 pt-4 text-h3 text-left">Brian Tambara</div>
+            <div class="ml-9 mb-2 text-h5 text-left">Software Engineer</div>
+            <div class="ml-9 mr-9 text-body-2 text-left">
+              I am a Los Angeles based Software Engineer currently looking for
+              work. My preferred languages for building web applications are
+              Python and Typescript.
+            </div>
+            <div class="mt-4 pb-4">
+              <v-btn :variant="variantAbout" @click="handleAbout()">
+                About
+              </v-btn>
+              <v-btn :variant="variantResume" @click="handleResume()">
+                Resume
+              </v-btn>
+            </div>
+          </v-sheet>
+          <div class="mt-3">
             <v-btn
               href="http://github.com/btambara"
               icon="fab fa-github"
@@ -71,9 +68,9 @@ function handleResume() {
               icon="fas fa-envelope"
               variant="text"
             ></v-btn>
-          </v-row>
-        </v-col>
-      </div>
+          </div>
+        </v-sheet>
+      </v-col>
       <v-col>
         <About v-show="isAboutShowing" />
         <Resume v-show="isResumeShowing" />
@@ -83,26 +80,7 @@ function handleResume() {
 </template>
 
 <style scoped>
-.fixed {
-  position: fixed;
-}
-.intro-pane {
-  background-color: #65474c;
-}
-
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.vue:hover {
-  filter: drop-shadow(0 0 2em #42b883aa);
-}
-.text-gold {
+.text-h3 {
   color: #d69b43;
 }
 </style>

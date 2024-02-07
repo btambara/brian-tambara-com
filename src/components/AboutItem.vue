@@ -2,10 +2,10 @@
 
 <template>
   <v-container fluid>
-    <v-row class="justify-end">
-      <v-col class="background-4A4064 rounded-lg pl-10" cols="7">
-        <h2 class="text-left">[ About Me ]</h2>
-        <p class="text-left text-C6CCBD">
+    <v-row>
+      <v-col>
+        <div class="text-h5 text-left">[ About Me ]</div>
+        <div class="text-body-1 text-left">
           <b>Quality-focused application development professional</b> with a
           passion for programming. Dedicated to writing elegant code that is
           <b>reusable, understandable, and easy to maintain</b>. Offer several
@@ -14,60 +14,60 @@
           platforms - including [Java, Python, and SQL] - to <b>improve</b> user
           experiences and <b>create</b> breakthrough,
           <b>innovative</b> applications.
-        </p>
+        </div>
       </v-col>
     </v-row>
-    <v-row class="justify-end">
-      <v-carousel cycle hide-delimiters height="40vh" class="w-50 mr-11">
+    <v-row class="mt-10">
+      <v-carousel cycle hide-delimiters :show-arrows="false">
         <v-carousel-item>
           <div
-            class="d-flex fill-height justify-center align-center flex-column text-left card ml-16"
+            class="px-10 mx-10 d-flex flex-column justify-center align-center"
           >
             <v-icon class="mb-3" icon="fas fa-terminal" color="#C3829D" />
-            <h4>
+            <div class="font-weight-bold text-left">
               View time consuming processes and system shortfalls as
               opportunities to innovate
-            </h4>
-            <p>
+            </div>
+            <div class="text-body-1 text-left">
               Developed applications to automate time-consuming tasks, increase
               operational efficiency, and eliminate errors caused by manual
               intervention.
-            </p>
+            </div>
           </div>
         </v-carousel-item>
 
         <v-carousel-item>
           <div
-            class="d-flex fill-height justify-center align-center flex-column text-left card ml-16"
+            class="px-10 mx-10 d-flex flex-column justify-center align-center"
           >
             <v-icon class="mb-3" icon="far fa-file-code" color="#C3829D" />
-            <h4 color="#D69B43">
+            <div class="font-weight-bold text-left">
               Continuously learn and adapt to rapidly evolving and emerging
               technologies
-            </h4>
-            <p>
+            </div>
+            <div class="text-body-1 text-left">
               Automated process for backing up major studio projects at Deluxe
               Media. Learned Python and PHP to develop a user-friendly and
               intuitive web interface.
-            </p>
+            </div>
           </div>
         </v-carousel-item>
 
         <v-carousel-item>
           <div
-            class="d-flex fill-height justify-center align-center flex-column text-left card ml-16"
+            class="px-10 mx-10 d-flex flex-column justify-center align-center"
           >
             <v-icon class="mb-3" icon="fas fa-wrench" color="#C3829D" />
-            <h4>
+            <div class="font-weight-bold text-left">
               Managed the migration from Python 2 to Python 3 for a client
               application.
-            </h4>
-            <p>
+            </div>
+            <div class="text-body-1 text-left">
               Refactored codebase to reflect the latest Python 3 changes.
               Updated all libraries for compatibility. Added typing to most of
               the codebase. Wrote unit tests to confirm that the changes work
               correctly.
-            </p>
+            </div>
           </div>
         </v-carousel-item>
       </v-carousel>
@@ -76,37 +76,14 @@
 </template>
 
 <style scoped>
-.card {
-  width: 80%;
+.font-weight-bold {
+  color: #d69b43;
 }
-.text-C6CCBD {
-  color: #c6ccbd;
-}
-.background-C6CCBD {
-  background-color: #c6ccbd;
-}
-.background-C3829D {
-  background-color: #c3829d;
-}
-.background-D69B43 {
-  background-color: #d69b43;
-}
-.background-4A4064 {
-  background-color: #4a4064;
-}
-.background-brown {
-  background-color: #65474c;
-}
-
 b {
   color: #c3829d;
 }
 
-h4 {
-  color: #d69b43;
-}
-
-h2 {
+.text-h5 {
   color: #d69b43;
 }
 </style>

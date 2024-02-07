@@ -31,7 +31,7 @@ function openWebsite() {
       color="#65474C"
     >
       <v-container fluid>
-        <v-row no-gutters>
+        <v-row>
           <v-col class="pt-3 text-right" cols="auto">
             <v-card-subtitle>
               {{ details.from }} - {{ details.to }}
