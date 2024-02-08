@@ -1,11 +1,18 @@
 services:
-  watchtower:
-    image: containrrr/watchtower
+  ouroboros:
+    container_name: ouroboros
+    hostname: ouroboros
+    image: pyouroboros/ouroboros
+    environment:
+      - CLEANUP=true
+      - INTERVAL=30
+      - LOG_LEVEL=info
+      - SELF_UPDATE=true
+    restart: unless-stopped
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
-    command: --interval 30 bt-web
   web:
     image: ghcr.io/btambara/brian-tambara-com:main
-    container_name: bt-web
+    restart: unless-stopped
     ports:
       - "80:80"
