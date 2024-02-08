@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import Resume from "./components/ResumeItem.vue";
 import About from "./components/AboutItem.vue";
+import avatar from "./assets/avatar.jpg";
 import { ref } from "vue";
 
 const isAboutShowing = ref(true);
@@ -41,8 +42,19 @@ function handleResume() {
       >
         <v-sheet color="#4A4064">
           <v-sheet class="rounded-xl" color="#65474c" elevation="12">
-            <div class="ml-8 pt-4 text-h4 text-sm-h3 text-md-h3 text-lg-h3 text-xl-h3 text-left">Brian Tambara</div>
-            <div class="ml-9 mb-2 text-h6 text-sm-h5 text-md-h5 text-lg-h5 text-xl-h5 text-left">Software Engineer</div>
+            <div class="pt-4">
+              <v-avatar :image="avatar" size="78"></v-avatar>
+            </div>
+            <div
+              class="ml-8 pt-2 text-h4 text-sm-h3 text-md-h3 text-lg-h3 text-xl-h3 text-left"
+            >
+              Brian Tambara
+            </div>
+            <div
+              class="ml-9 mb-2 text-h6 text-sm-h5 text-md-h5 text-lg-h5 text-xl-h5 text-left"
+            >
+              Software Engineer
+            </div>
             <div class="ml-9 mr-9 text-body-2 text-left">
               I am a Los Angeles based Software Engineer currently looking for
               work. My preferred languages for building web applications are
