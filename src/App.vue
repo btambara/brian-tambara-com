@@ -2,6 +2,7 @@
 import Resume from "./components/ResumeItem.vue";
 import About from "./components/AboutItem.vue";
 import avatar from "./assets/avatar.jpg";
+import scrum from "./assets/sa-csd-600.png"
 import { ref } from "vue";
 
 const isAboutShowing = ref(true);
@@ -58,6 +59,9 @@ function handleResume() {
             <div class="ml-9 mr-9 text-body-2 text-left">
               I am a Los Angeles based Software Engineer currently working for Premier America Credit Union. My preferred languages for building web applications are
               Java, Python and Typescript.
+            </div>
+            <div class="pt-4">
+              <v-avatar :image="scrum" size="68"></v-avatar>
             </div>
             <div class="mt-4 pb-4">
               <v-btn :variant="variantAbout" @click="handleAbout()">
