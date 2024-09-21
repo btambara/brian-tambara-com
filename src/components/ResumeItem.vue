@@ -6,7 +6,7 @@ import jobs from "../assets/jobs.json";
 <template>
   <v-container>
     <v-row class="justify-end">
-      <v-col cols="auto">
+      <v-col cols="auto" class="mr-2">
         <v-row class="ml-15 mb-0">
           <v-btn
             variant="text"
@@ -20,6 +20,7 @@ import jobs from "../assets/jobs.json";
           <v-timeline-item
             dot-color="#C3829D"
             fill-dot
+            size="x-small"
             v-for="job in jobs"
             :key="job.id"
           >

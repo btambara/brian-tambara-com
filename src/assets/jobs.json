@@ -1,6 +1,6 @@
 [
   {
-    "id": 5,
+    "id": 4,
     "company": "Premier America Credit Union",
     "website": "https://www.premieramerica.com/",
     "location": "Chatsworth, CA",
@@ -24,11 +24,27 @@
       {
         "id": 3,
         "name": "SQL"
+      },
+      {
+        "id": 4,
+        "name": "Jira/Confluence"
+      },
+      {
+        "id": 5,
+        "name": "Azure DevOps"
+      },
+      {
+        "id": 6,
+        "name": "Git"
+      },
+      {
+        "id": 7,
+        "name": "ServiceNow"
       }
     ]
   },
   {
-    "id": 4,
+    "id": 3,
     "company": "ZOO Digital",
     "website": "https://www.zoodigital.com/",
     "location": "Sheffield, England (Remote)",
@@ -84,11 +100,15 @@
       {
         "id": 11,
         "name": "GitLab"
+      },
+      {
+        "id":12,
+        "name": "Targetprocess"
       }
     ]
   },
   {
-    "id": 3,
+    "id": 2,
     "company": "ZOO Digital",
     "website": "https://www.zoodigital.com/",
     "location": "El Segundo, California (Remote)",
@@ -108,7 +128,7 @@
     ]
   },
   {
-    "id": 2,
+    "id": 1,
     "company": "Deluxe Media",
     "website": "https://www.bydeluxe.com/",
     "location": "Burbank, California",
@@ -132,7 +152,7 @@
     ]
   },
   {
-    "id": 1,
+    "id": 0,
     "company": "LigoLab",
     "website": "https://www.ligolab.com/",
     "location": "Glendale, California",
@@ -148,30 +168,6 @@
       {
         "id": 1,
         "name": "MySQL"
-      }
-    ]
-  },
-  {
-    "id": 0,
-    "company": "CalPortland Cement",
-    "website": "https://www.calportland.com/",
-    "location": "Glendora, California",
-    "title": "Service Desk Analyst",
-    "from": "January 2008",
-    "to": "June 2011",
-    "description": "Provided Level 1 user support for the entire company, including providing business critical IT support and equipment maintenance for executives and dispatchers. Maintained daily IT operations checklist. Troubleshot PC, printer, network (LAN/WAN) and data center environments. Maintained WinTel, terminal and application servers.",
-    "stack": [
-      {
-        "id": 0,
-        "name": "Java & Java Swing"
-      },
-      {
-        "id": 1,
-        "name": "WinTel"
-      },
-      {
-        "id": 2,
-        "name": "Terminal and Application Servers"
       }
     ]
   }
