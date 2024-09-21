@@ -21,7 +21,7 @@
       <v-carousel cycle hide-delimiters :show-arrows="false">
         <v-carousel-item>
           <div
-            class="px-10 mx-10 d-flex flex-column justify-center align-center"
+            class="px-lg-16 mx-lg-16 d-flex flex-column justify-center align-center"
           >
             <v-icon class="mb-3" icon="fas fa-terminal" color="#C3829D" />
             <div class="font-weight-bold text-left">
@@ -38,7 +38,7 @@
 
         <v-carousel-item>
           <div
-            class="px-10 mx-10 d-flex flex-column justify-center align-center"
+            class="px-lg-16 mx-lg-16 d-flex flex-column justify-center align-center"
           >
             <v-icon class="mb-3" icon="far fa-file-code" color="#C3829D" />
             <div class="font-weight-bold text-left">
@@ -55,7 +55,7 @@
 
         <v-carousel-item>
           <div
-            class="px-10 mx-10 d-flex flex-column justify-center align-center"
+            class="px-lg-16 mx-lg-16 d-flex flex-column justify-center align-center"
           >
             <v-icon class="mb-3" icon="fas fa-wrench" color="#C3829D" />
             <div class="font-weight-bold text-left">
