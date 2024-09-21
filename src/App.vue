@@ -56,9 +56,8 @@ function handleResume() {
               Software Engineer
             </div>
             <div class="ml-9 mr-9 text-body-2 text-left">
-              I am a Los Angeles based Software Engineer currently looking for
-              work. My preferred languages for building web applications are
-              Python and Typescript.
+              I am a Los Angeles based Software Engineer currently working for Premier America Credit Union. My preferred languages for building web applications are
+              Java, Python and Typescript.
             </div>
             <div class="mt-4 pb-4">
               <v-btn :variant="variantAbout" @click="handleAbout()">

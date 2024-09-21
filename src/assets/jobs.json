@@ -1,5 +1,33 @@
 [
   {
+    "id": 5,
+    "company": "Premier America Credit Union",
+    "website": "https://www.premieramerica.com/",
+    "location": "Chatsworth, CA",
+    "title": "Software Developer and Analyst",
+    "from": "June 2024",
+    "to": "Present",
+    "description": "Develop solutions using various languages and technologies for internal stakeholders at Premier America. Collaborate with business units to analyze, design workflows, and code solutions to enhance revenue, efficiency, and member experience. Utilize Symitar, SQL, Python, and web frameworks to create internal workflows. Lead planning, design, programming, testing, and support for new processes. Automate business processes, deploy new features, optimize APIs, and orchestrate data exchange. Create reusable code, documentation, provide application support, and collaborate with stakeholders. Handle Continuous Integration deployments, troubleshoot bugs, and address issues at the module level.",
+    "stack": [
+      {
+        "id": 0,
+        "name": "MuleSoft"
+      },
+      {
+        "id": 1,
+        "name": "JavaScript"
+      },
+      {
+        "id": 2,
+        "name": "Java"
+      },
+      {
+        "id": 3,
+        "name": "SQL"
+      }
+    ]
+  },
+  {
     "id": 4,
     "company": "ZOO Digital",
     "website": "https://www.zoodigital.com/",
