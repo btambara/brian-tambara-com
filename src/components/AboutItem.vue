@@ -17,7 +17,7 @@
         </div>
       </v-col>
     </v-row>
-    <v-row>
+    <v-row class="mt-14">
       <v-carousel cycle hide-delimiters :show-arrows="false">
         <v-carousel-item>
           <div
