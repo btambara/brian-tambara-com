@@ -34,7 +34,7 @@ function handleResume() {
   <v-container>
     <v-row>
       <v-col
-        class="ma-sm-1 mt-md-16 mt-lg-16 mt-xl-10"
+        class="pt-lg-16 ma-sm-1 mt-md-16 mt-lg-16 mt-xl-10"
         cols="12"
         md="6"
         lg="5"

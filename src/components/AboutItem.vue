@@ -3,8 +3,8 @@
 <template>
   <v-container fluid>
     <v-row>
-      <v-col>
-        <div class="text-h5 text-left">[ About Me ]</div>
+      <v-col class="pt-lg-11 mt-lg-11">
+        <div class="mb-3 text-h5 text-left">[ About Me ]</div>
         <div class="text-body-1 text-left">
           <b>Quality-focused application development professional</b> with a
           passion for programming. Dedicated to writing elegant code that is
@@ -17,7 +17,7 @@
         </div>
       </v-col>
     </v-row>
-    <v-row class="mt-10">
+    <v-row>
       <v-carousel cycle hide-delimiters :show-arrows="false">
         <v-carousel-item>
           <div

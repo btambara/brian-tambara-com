@@ -7,13 +7,14 @@ import jobs from "../assets/jobs.json";
   <v-container>
     <v-row class="justify-end">
       <v-col cols="auto" class="mr-2">
-        <v-row class="ml-15 mb-0">
+        <v-row class="ml-12">
+          <div class="text-h5 text-left">[ Resume ]</div>
           <v-btn
             variant="text"
             append-icon="fas fa-download"
             href="/Resume_Brian_Tambara.pdf"
             class="hover-D69B43"
-            >View Full Resume</v-btn
+            >Download Resume</v-btn
           >
         </v-row>
         <v-timeline density="compact">
@@ -42,6 +43,9 @@ import jobs from "../assets/jobs.json";
 </template>
 
 <style scoped>
+.text-h5 {
+  color: #d69b43;
+}
 a:hover {
   color: #d69b43;
 }
