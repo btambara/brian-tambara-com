@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import Job from "./JobItem.vue";
-import jobs from "../assets/jobs.json";
+import resume from "../assets/resume.json";
 </script>
 
 <template>
@@ -22,18 +22,18 @@ import jobs from "../assets/jobs.json";
             dot-color="#C3829D"
             fill-dot
             size="x-small"
-            v-for="job in jobs"
-            :key="job.id"
+            v-for="(item, index) in resume.professional.experience"
+            :key=index
           >
             <Job
-              :company="job.company"
-              :website="job.website"
-              :location="job.location"
-              :title="job.title"
-              :from="job.from"
-              :to="job.to"
-              :description="job.description"
-              :stack="job.stack"
+              :company="item.company"
+              :website="item.website"
+              :title="item.title"
+              :location="item.location.city + ',  ' + item.location.state"
+              :from="item.from"
+              :to="item.to"
+              :description="item.summary"
+              :stack="item.stack"
             />
           </v-timeline-item>
         </v-timeline>
