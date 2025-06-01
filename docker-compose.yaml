@@ -4,4 +4,4 @@ services:
       context: .
     restart: always
     ports:
-      - "80:80"
+      - "1024:1024"
